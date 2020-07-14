@@ -129,7 +129,34 @@ list can be ordered and unordered
 	<li>second item</li>
 </ul>
 
+=====================================================
+to display table
 
+<table>  to denotes it is a table initializing
+<thead>	 to initilaize table headings
+	<tr> for row data initial
+		<th>col head 1</th>
+		<th>col head 2</th>
+	</tr>raw data end    ///if more headings are presents we can add more <tr> tags
+
+</thead>
+<tbody>
+	<tr>
+		<td>data 1.1</td>
+		<td>data 1.2</td>////////for heading <th> is used , for data <td> is used
+	</tr>
+	<tr>
+		<td>data 2.1</td>
+		<td>data 2.2</td>
+	</tr>
+
+</tbody>    
+
+</table> to indicate table end
+
+
+TO GIVE A BORDER TO THE TABLE
+<table border="1px">////
 
 
 
