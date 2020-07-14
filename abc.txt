@@ -12,6 +12,17 @@ CERATE NEW FILE-->SAVE AS HTML OR ANY FORMAT--> THEN OPEN FILE IN LOCAL REPO
 
 
 
+==============================================================
+how to get auto codes on startup
+
+create a new file,
+save the file as .html,
+then type html on editor choose html 5 from list, auto codes will appears
+
+
+
+
+
 
 
 =============================================EXTENSION=======
@@ -33,6 +44,95 @@ WE DONT NEED TO OPEN THE FILE ANYMORE, JUST RIGHT CLICK FROM VSCode
 ==>OPEN WITH LIVE SERVER==>SELECT CHROME
 
 WE CAN SEE THAT WHAT EDIT WE MAKE IN CODE AUTOMATICALLY APPEARS ON SITE
+
+
+
+
+
+====================================================
+HTML CONCEPTS
+
+.html format
+<!DOCTYPE html>/////reprents the version of html that it is html 5
+<html>   ///starting
+<head> 	///represnts the title, logo , on tabs display
+<title> put title to display in the tab </title>
+
+<body>	////contains info about what user see, the contents
+<h1> heading </h1>
+</body>	///close body
+
+
+</head>///close head
+
+</html>///finish file
+
+
+
+<h1></h1> has higher size , <h6></h6> has small size
+<p></p> for paragraph
+
+<button></button> to create buttons 
+
+<br> line break, no closing br tag 
+
+<img></img> for displaying and editing image
+
+<a></a> it is used to add links
+
+<hr> to create visual line, no need of closing tag
+
+<i></i> italic font
+<u></u> for  underline
+<strong></strong> for bold font
+
+<del></del> to add a cross to text (cross text font)
+
+
+
+<img src="path">
+path can be local or net image 
+MAKE SURE TO COPY THE IMAGE ADDRESS (RIGHT CLICK AND IMAGE ADDRESS)
+
+MAKE SURE ALL (local) IMAGES WE USED IN SITE SHOULD BE IN AFOLDER IN OUR LOCAL REPO
+
+for local files:
+<img src="complete path of the image">
+
+
+<a href="link of the site">here what it should display like click me</a>
+a is a tag and href is a attribute
+
+
+<button>what button should display</button>
+
+
+=======================================================
+
+TO GET FREE CONTENT SEARCH FOR LOREM IPSUM
+
+
+
+=======================================================
+just add <br> to get everything in an order
+
+
+=====================================================
+list can be ordered and unordered
+
+<ol>  ///ordered list
+	<li>first list item</li>
+	<li>second list item</li>
+</ol>
+<ul> ///unordered list
+	<li>first item</li>
+	<li>second item</li>
+</ul>
+
+
+
+
+
 
 
 
