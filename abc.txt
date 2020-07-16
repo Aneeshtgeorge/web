@@ -155,11 +155,370 @@ to display table
 </table> to indicate table end
 
 
+
 TO GIVE A BORDER TO THE TABLE
 <table border="1px">////
 
 
+==============================================================
+=====HTML CONTINUTION===============
+
+FORM:
+typical form
+Form is like login page, that is like a info entry boxes and submit it to the server
+
+<form>
+<label>Fullname</label>/////label defines the heading of the box
+<input type="text">   //////input is used to get user inputs ,type is the attribute defininig input should be text
+<label>age</label>
+<input type="number">
+<label>email</label>
+<input type="email">///////email format is present in html 5 so just speicify email
+<label>gender</label>
+<label>male</label>
+<input type="radio" name="what is the heading here it is gender>   ///////to get radio buttons that is choosing buttons
+<label>female</label>
+<input type="radio name="gender>  //////this method will select both 
+
+/////name is used for grouping
+
+
+TO PRODUCE A DROPDOWN MENU:
+<label>qualification</label>
+<select>
+	<option>choose </option>   ////each option in the list
+	<option>option 1</option>
+	<option>option 2</option>
+	<option>option 3</option>
+</select>
+
+
+TO PRODUCE CHECKBOX (SELECTING MULTIPLE OPTIONS THAT IS TICKING MULTIPLE OPTIONS)
+<label>skills</label>
+<label>html</label>
+<input type ="checkbox">
+<label>css</label>
+<input type="checkbox">
+<label>jsript</label>
+<input type="checkbox">
+
+<input type="submit">/////////submit button automatically created
+
+A BUTTON WITH NAME "Sumbit" IS CREATED AUTOMATICALLY, 
+
+<input type="submit" value="whatever we want the button to display">
+ 
+<form>
 
 
 
+===============================================
+WE CAN ADD VIDEO AND AUDIO TO THE WEBSITE
+
+
+VIDEO ATTRIBUTES:
+
+<video width="px" height="px" controls loop autoplay>  //////controls is an attribute is used to add the controls for the video file
+//////////////////loop is an attribute used to contiouns playing of video.
+//////////autoplay is an attribute used to play the video on loading the site automatically	
+/////////muted is an attribute used to play the video without sound
+
+<source src="PATH">
+</video>
+
+PATH CAN ALSO BE A LINK
+
+
+<audio controls>
+<source src="path">
+</audio>   same as above
+
+
+WHEN WE WANT TO ADD A YOUTUBE VIDEO (or any video TO OUR SITE), WE SHOULD DISPLAY ITS THUMBNAILS
+FOR THAT IFRAME IS USED
+
+FOR THAT SIMPLY GO TO YOUTUBE ==>SEARCH THE VIDEO==> RIGHT CLICK ==> COPY EMBEDDED CODE==>PASTE IT IN OUR CODE THATS ALL..
+
+USING IFRAME WE CAN ALSO ADD WEBSITE , AND IT WILL SHOW A TINY 
+FOR THAT 
+
+<iframe src="site address"></iframe>
+
+==============================================================
+CSS
+==============================================================
+
+
+THERE ARE DIFFERENT TYPES OF ADDING FORMATS TO SITE:
+1.INLINE METHOD
+ 	old method , adding font on the html line code
+	<h1 style="color:red;width:5px">heading</h1>
+	each properties and values should be seperated by a ;
+2.INTERNAL METHOD
+	<style>
+	h1{
+		color:red;
+		width:5px
+	}
+	</style>
+all formats are defined in this style tags in the same html file
+
+3.EXTERNAL METHOD
+we create a seperate file .CSS to hold the fonts of the html file
+
+suppose we create a style.css file (name can be anything)
+
+this is in html:
+<link href="path" type="text/css" rel="stylesheet">///this is to link to the css file
+
+rel indicates the relation
+=======IMPORTANT=======
+
+THE LINK HREF SHOUOLD BE IN HEAD OF HTML FILE
+
+========================================
+
+in style.css:
+h1
+{
+	color:red;
+	font size:5px
+}
+
+WE CAN PICK ANY COLOR AND COPY ITS HEX CODE INCLUDING # TO THE COLOR PROPERTIES
+
+WHENEVER WE WRITE H1 WE GET THE COLOR MENTIONED IN THE STYLE
+
+=========================NOTE=========
+DONT FORGET TO PUT ; AFTER VERY PROPERTIES ELSE NEXT PROPERTIES WILL NOT COME
+============================================================
+PUT CSS ,HTML, IN THE SAME FILE
+
+
+
+
+
+==========================================================
+BY ABOVE CODE WHENEVER h1 occurs in our html file it will be given that properties
+SO INSTEAD OF THAT WE CAN SPECIFY TO WHICH h1 WE WANT THE FONT
+
+WE CAN CREATE AN ID FOR EACH FILE
+
+<h1 id='first'>first one</h1>
+<h1 id='second'>second one</h1>
+
+WE CAN COMBINE FONTS FOR DIFFERENT TAGS USING CLASS
+
+<p class="lk">
+	abcdcsfibfiwefwbf
+</p>
+<h2 class="lk">
+	h2222 in classs
+</h2>
+
+
+IN CSS FILE
+
+#idname
+{
+}
+
+.classname  /////. is essential
+{
+}
+
+===================================
+<div>  (inside body)
+</div>
+DIV IS USED TO CREATE SEPERATE PORTIONS ON THE SITE
+i.e we can specify the header part, left body part,right body part, middle part,footer etc
+
+
+each div can have seperate stylesheets.
+
+div can have id too, inside div all above properties work too
+
+=======================================IMPORTANT====
+ALL ID SHOULD BE #ID IN CSS
+ ALL CLASS SHOULD BE .CLASSNAME
+====================================================
+
+FOR MOVING MARGIN ATTRIBUTE IS USED IN CSS
+
+MARGIN LEFT MEANS HOW MUCH WE MOVE FROM LEFT.
+
+
+when we take margin top: WE TAKE FROM THE NEAREST COMPONENT
+
+=========================================================
+For moving each div components inside it , we can use
+
+padding option
+
+===========================================
+for moving each div we can use float in css
+float:left
+float:right
+
+IF NO SPACE THEN IT AUTOMATICALLY GOES DOWN
+
+IF WE NEED TO PLACE IN CENTER 
+WE CAN PLACE RIGHT,THEN LEFT
+
+TO SEPERATE THESE DIV WE CAN USE MARGIN
+
+===============================================
+we can add border to div 
+
+#divid
+{
+border:5px solid;
+border-color:red
+}
+
+
+=============================important========
+css doesnt need "="
+===========================================
+
+
+we can see any style of any component we want of any site in net by
+inspect element, then we can copy that style to our style for implementing
+
+======================================================
+
+
+
+
+
+we are creating a footer ,header etc
+
+1.create a main div
+2.inside it create topbar,sidebar, footer divs etc
+3.give values to outer div in css
+
+CREATE A MAIN DIV:
+
+<div class="main>
+	<div class="header">
+	</div>
+	<div class="body">
+		<div class="left">
+		</div>
+		<div class="right>
+		</div>
+	</div>
+	</div>
+	<div class="footer">
+	</div>
+
+inside css file:
+specify main height and width
+
+then specify height and width of components using percentage w.r.t parent div
+
+=============================================================
+
+CREATING A FB LOGIN PAGE
+=============================================================
+1.START FROM TOP , BY INSPECTING ELEMEMNT WE CAN GET THE COLOR
+2.ADJUST THE HEIGHT AND WIDTH
+3.WE CAN DIVIDE THE HEADER INTO MULTIPLE DIVS , HERE FOR FB LOGO AND LOGIN DETAILS
+
+
+////////in web editor
+font-size:to give size
+
+color:to give color
+
+font-weight:bold ,to give a bold effect to our text
+
+text-decoration:none to remove any font effects like link line in a tag
+
+======================IMPORTANT===============
+WHEN A margin-top doesnt work , try padding in parent div
+
+
+======================================important=====
+we can create a table not just to show as a table but also as for other purposes.
+
+on login page email,password etc are equally aligned so creating a table is easier
+
+
+
+
+=============================================================
+when a new div is created it will be placed down automatically
+
+============================================================
+
+for creating empty spaces using tables just leave <td></td> a empty
+
+====================
+for getting the same font thoroughout the site 
+set it in the main div
+
+IMPORTANTTTTTTT:
+
+CLASS CAN BE WRITTIEN NEAR TO ALOMST ANY TAGS AS ATTRIBUTES,
+
+
+========================================================
+
+we can create on hovering details like color change, font style changes
+
+.forgot:hover
+{
+    text-decoration: underline;
+}
+
+a:hover {
+  background-color: lightgreen;
+}
+=======================================
+THERE ARE 4 STATES IN THE WEB
+The four links states are:
+
+(BUTTONS CAN ALSO INCLUDE)
+a:link - a normal, unvisited link
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked
+
+WE CAN ALSO COMBINE
+===================================================
+NOTE THAT SAME CLASS NAME SHOULD BE USED.
+
+===============================================================
+
+
+WE CAN USE CURSOR OPTION TO CHANGE THE CURSOR.
+
+cursor:pointer
+
+===========================================
+WE CAN CHECK FOR GRADIENT IN GRADIENT GENERATOR IN THE WEB, COPY THE CODE AND PLACE IT IN OUR CODES
+
+
+============================================================
+
+place holder attribute is used for placing a default in dropdown list
+
+
+height and width of the text entry box can also modififed
+
+==============================radius border=======
+border-radius is used for giving a curve border
+
+
+===============================================================
+outline:none
+
+to remove the borders on text boxes on clicking
+
+=============================================================
+PLACEHOLDER
+placeholder is used to place a string as constant in the text field
+
+the string will appear whenever the textbox is empty.
 

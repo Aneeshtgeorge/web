@@ -1,0 +1,47 @@
+#first
+{
+    background: khaki;
+    color: indianred;
+    padding-left: 50px;
+    
+}
+.newc
+{
+    background: sienna;
+    color: skyblue;
+    padding-left: 30px;
+}
+
+#div1
+{
+    height: 200px;
+    width: 300px;   
+    background: tan;
+    padding-left: 30px;
+    border: 5px solid;
+    border-color: darkgreen;
+}
+.insidediv1
+{
+   color: blueviolet;
+}
+#div2
+{
+    height:200px;
+    width: 300px;
+    background: brown;
+    margin-right: 0px;
+    margin-left: 750px;
+    border: 5px solid;
+    border-color: darkblue;
+    
+
+}
+#div3
+{
+    background-color: darkorange;
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    color: darkred;
+}

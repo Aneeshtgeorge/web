@@ -1,0 +1,44 @@
+.outerdiv
+{
+    height: 630px;
+    width: 100%;
+    background: darkslategray;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.div1
+{
+    height: 50%;
+    width: 30%;
+    background: darkturquoise;
+    float: left;
+        
+}
+.div2
+{
+    height: 50%;
+    width: 30%;
+    background: deeppink;
+    float: left;
+    margin-left: 10px;
+
+}
+.div3
+{
+    height: 50%;
+    width: 30%;
+    background: red;
+    float: left;
+    margin-left: 10px;
+    
+}
+.div4
+{
+    height: 40%;
+    width: 1235px;
+    background: indigo;
+    float: left;
+    margin-top: 10px;
+    
+    
+}
