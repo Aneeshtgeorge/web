@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquerytest</title>
+</head>
+<body>
+    <button id="btn">click me</button>
+    <h1 id="h11">
+    </h1>
+    <div style="height:400px;width: 400px; background: darkolivegreen;" id="box1">
+    </div>
+
+    <input type="text" id="tbox">
+    <br>
+    <br>
+    <label style="display: none;" id="ll">ENTER 4 LETTERS</label>
+    <br>
+    <input type="text" id="">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                //alert("button pressed")
+                $("#box1").fadeToggle(3000)
+            })
+            $("#btn").mouseenter(function(){
+                $("#btn").css({"background":"blue"})
+               // $("#h11").text("want to press")
+            })
+            $("#btn").mouseleave(function(){
+                $("#btn").css({"background":"none"})
+               // $("#h11").text("")
+            })
+            $("#tbox").blur(function(){
+                var text=$("#tbox").val()
+                if(text.length<4)
+                {
+                    $("#ll").show()
+                }
+                else{
+                    $("#ll").hide()
+                }
+            })
+        })
+    </script>
+</body>
+</html>

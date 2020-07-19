@@ -1,0 +1,25 @@
+.main
+{
+    width: 400px;
+    height: 600px;
+    background: darkcyan;
+    margin-left: 400px;
+    padding-top: 20px;
+}
+#display
+{
+    height: 50px;
+    width: 300px;
+    background: white;
+    margin-left: 50px;
+    pointer-events: none;
+}
+
+.btn
+{
+    width: 60px;
+    height: 40px;
+    margin-left: 29px;
+    margin-top: 38px;
+    
+}

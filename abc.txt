@@ -522,3 +522,416 @@ placeholder is used to place a string as constant in the text field
 
 the string will appear whenever the textbox is empty.
 
+
+
+
+
+
+=================================================================
+
+JAVASCRIPT ----
+
+VARIABLE INITIALIZATION:
+
+var num=6
+var num="abc"
+
+num will change value as like python
+
+to prevent usage of same variable
+use let code
+
+let place = "abc"
+
+var place="cdf" will produce error
+
+no need of semi colon
+
+for printing:
+console.log("dsdsdfsdf",+place)
+
+to create function:
+
+function functionname()///function keyword is important
+{
+}
+
+dictionaries
+
+var obj ={
+		place:"abc",
+		number:5,
+	}
+obj.place to get specified data
+
+
+
+================================================
+JAVASCRIPT IS USED TO PRODUCE THE ACTION CAUSED BY MOUSE 
+DISPLAYS OUTPUT IN THE WEB BROWSER CONSOLE WINDOW INSIDE INSPECT ELEMENT.
+======================================================
+
+
+JAVASCRIPT IS WRIITEN IN HTML FILE USING
+
+in html file:
+<button onclick="show()"> click me</button>
+
+
+<script>
+	function show()
+	{
+		console.log("button is pressed")
+</script>
+
+
+here a single array can have multiple values
+
+array of dictionaries
+
+NOTE: TO DENOTE EACH DICT, INCLUDE IN {} 
+
+function click()
+{
+	var arr=[{place:"abc",age:4},{place:"cde",age:6}]
+}
+
+
+
+=============================================================
+JAVASCRIPT IN FRONT END
+
+=======================================IMPORTANT
+TO GET A VALUE FROM ANYTHING LIKE A TEXTBOX
+
+var value =document.getElementById("id of the element").value
+
+here we get the value from component with id as given and assign to value
+
+
+TO PLACE THE VALUE:
+
+document.getElementById("id").innerHTML=value
+
+innerHTML is used to change the value to any other in the html file
+
+=========================================
+TO GIVE A VALUE TO SOME OBJECT
+E.G: document.getElementById("display").value+=val
+
+here val is assigned as the value of the object and when it is pressed again and again it must be appended for that we place + sign
+
+==========================================
+window.alert("message") TO DISPLAY THE THE MESSAGE BOX
+
+<button onclick="fname('string attribute')">green</button>
+ 
+we only need '' for string attribute
+=================IMPORTANT=================
+LOOK AT THE QUOTES IN ABOVE CODE
+ATTRIBUTES SHOULD BE IN SINGLE QUOTES
+===========================================
+
+function fname(color)
+document.getElementById.style.background=color
+
+THAT IS IN STYLE TAG CHANGE BACKGOUND COLOR TO COLOR SPECIFIED
+
+
+====================================================
+
+
+javascript file is created using .js extension
+
+TO IMPORT JS FILE TO HTML
+
+IF .js files are very long then it is convienenit to call it after all the body arrives
+
+PLACING AT THE END IS MORE CONVIENIENT
+
+in head or body at last , <script src="filename.js"></script>
+
+
+
+=========================================================
+
+pointer-events=none ,TO DISABLE POINING EVENTS.
+
+
+
+WE CAN PASS FUNCTION AS AN ARGUMENT IN JAVASCRIPT,
+WE CAN WRITE A FUNCTION INSIDE ANOTHER FUNCTION,
+WE CAN USE FUNCTION WITHOUT A NAME IN JAVASCRIPT
+=========================================================
+
+JQUERY 
+
+it can be defined as a library function of javascript codes
+
+it is used to simplify the actions of the javascript
+
+it will be executed only when the entire page is loaded.
+
+e.g:
+
+<body>
+<btn id="idname">click</button>
+<script src="local or net jquery links"></script>
+
+
+inside script:
+
+<script>
+$(document).ready(function(){
+	$("#idname").click(function(){
+		alert("btn pressed")
+		})
+	})
+</script>
+
+
+NOTE:======================================================
+$(document).ready(function()  ,WE ONLY NEED IT ONCE, FOR NEXT ID, JUST CREATE AS $("$ID") 
+========================================================
+
+some function are:
+
+click : what should do on clicking
+
+mouseenter:what to do when we enter a component
+
+mouseleave:what to do when we leave a component
+
+keypress: what should do on key press
+
+keydown:what should do on key is down
+
+keyup:what should be done when the key is up
+
+submit:on sumbit changes.
+
+select:on select changes
+
+focus: what should we enter in a particular tab, what should we do next
+
+blur: when we enter a wrong value then it alerts the user.
+
+load:on load
+
+scroll:on scrolling
+
+
+
+JQUERY CDN IS PRESENT IN NET JUST==> CHOOSE JQUERY'S ==> uncompreesed
+
+==========================================important=====
+ALWAYS WRITE SCRIPT AFTER THE SCRIPT FILE LOADING CODE
+=======================================================
+
+
+FOR CHANGING CSS STYLES USING JQUERY
+
+
+$("#id").css({"background":"red"}) =====LOOK THE QUOTES NO COLON SHALL BE IN QUOTES
+		
+.text("text") to change text
+
+.hide() // to hide a component
+
+====================
+EFFECTS
+
+.toggle(in milliseconds time)  // to hide and display
+we can see awesome effect
+
+.fadetoggle(time in milli)
+
+
+style({
+display:none}) for hiding a particular component just for a few time
+
+WHEN A ID USED THEN THAT CODE SHOULD HAVE STARTED WITH $
+
+=======================================
+VALIDATION IS SIMPLER IN JQERY
+
+validation plugin(cdn) ,choose npm link
+
+==========================================================
+
+WE SHOULD NOTE THAT FIRST WE NEED TO CALL THE JQUERY LIBS
+THEN WE CALL THE VALIDATION PLUGIN
+
+WE HAVE TO USE 'NAME' INSTEAD OF ID FOR VALIDATION PLUGIN
+
+i.e <label name="name id" id="id">labevalue</label>
+
+in script file:
+
+$(document).ready(function(){
+$("id").validate({
+	rules:{nameid:{
+		required:true    ///to set the value to 
+		}}
+	})
+})
+
+
+ALL RULES SHOULD BE PLACED IN RULES SECTION.
+
+FOR SIMPLICITY WE CONSIDER THE FORM TAG ID AS BASE,THEN WE MAKE RULES ON THAT
+
+RULES CAN BE SEPERATED USING ","
+
+EACH NAMES MUST BE SEPERATED USING ','
+
+
+refer fb login page.html
+
+we assigned value to each select to get that particular value to the component
+
+
+
+===================MESSAGES======
+WE CAN ADD OUR CUSTOM MESSAGES TO THE ERRORS,
+
+AFTER RULES SECTION IN THE 
+
+rules:
+{
+	nameid:{
+	}
+},//////commma important
+messages:
+{
+
+	nameid:{
+	required:" "   ///message for required or we can just, nameid:"message" for overall
+	}
+}
+
+
+================================================================
+
+
+
+BOOTSTRAP:
+FOR ALIGNING WEBSITE TO ALL DEVICES.
+
+FOR RESPONSIVE WEBSITE.
+
+=======================================
+GRID SYSTEM EXPLANATION
+
+different screens sizes are:
+
+xs=extra small for mobile devices
+xs is not anymore in bootstrap 4
+sm=small for tablets
+md=medium for small screen laptops
+lg=large screen monitors
+xl=extra large for tv screen
+
+
+all the row has 12 equal parts i.e screen is divided into 12 equal parts
+we can specify how much parts each screen size wanted in our code.
+
+
+for xs:  we use col-xs-12
+
+it means column xtra small use 12 parts of 12 parts for a single entitiy
+
+it will display the picture or video one per row.
+
+we can also specify : col-xs-4
+we divide 12 by 4 we get 3, so our site will give 3 objects per
+screen 
+
+lllry we can use s,m,l,xl etc
+
+ALL THIS ARE PLACED INSIDE A SINGLE DIV , GIVEN AS MULTIPLE CLASSES
+
+NOTE:WE CAN ALSO SPECIFY NOT ONLY EQUAL PARTS BUT ALSO OTHER AS WELL 
+
+=======================================
+
+
+TO IMPORT THE LIBRARIES SEARCH BOOTSTRAP 4
+
+css file link should be placed in head tag
+
+rest script files are placed in bottom of our body tag
+
+
+===============================================IMPORTANT====
+THIS IS HOW WE GIVE VALUES FOR DIFFERERNT SCREENS
+
+
+at start:
+<div class="row">  ////class name has to be row
+	<div class="col-xs-12 col-sM-6 col-mD-4 col-lG-3 col-xl-2">
+	///CONTENTS INSIDE DIV
+	</div>
+</div>
+
+"row" will divide the screen into 12 parts
+
+===============================================
+
+NOTE: "XS" IS NOT IN BOOTSTRAP 4
+JUST WRITE: "col-12"
+WE CAN ALSO USE COMBINATIONS FOR THE SIZES
+
+E.G:
+<div class="col-12 col-sM-6 col-mD-4 col-lG-3 col-xl-2"></div>
+<div class="col-12 col-sM-6 col-mD-4 col-lG-3 col-xl-2"></div>
+<div class="col-12 col-sM-6 col-mD-4 col-lG-3 col-xl-2"></div>
+<div class="col-12 col-sM-6 col-mD-4 col-lG-3 col-xl-2"></div>
+<div class="col-12 col-sM-6 col-mD-4 col-lG-3 col-xl-2"></div>
+<div class="col-12 col-sM-6 col-mD-4 col-lG-3 col-xl-2"></div>
+
+THIS WILL CREATE 12/2 = 6 PARTS AS ON XL SCREEEN
+
+SUPPOSE
+<div class="col-12 col-sM-6 col-mD-4 col-lG-3 col-xl-6"></div>
+<div class="col-12 col-sM-6 col-mD-4 col-lG-3 col-xl-6"></div>
+<div class="col-12 col-sM-6 col-mD-4 col-lG-3 col-xl-2"></div>
+<div class="col-12 col-sM-6 col-mD-4 col-lG-3 col-xl-2"></div>
+<div class="col-12 col-sM-6 col-mD-4 col-lG-3 col-xl-2"></div>
+<div class="col-12 col-sM-6 col-mD-4 col-lG-3 col-xl-2"></div>
+
+on a xl screen first two classes occupy 12/6 = half of the row each , thus our row will be completely occupied by the first 2
+then next 4 will occupy the next part 12/2=6 parts of the row, leaving some spaces
+
+==================================================
+IF CONFUSION EXISTS ,THEN TAKE ONLY SUM OF VALUES GIVEN IN 
+COL-XL-VALUE   , ONLY VALUE MUST BE CONSIDERERD.
+
+====================================================
+
+SINCE THE SIZES OF THE VARIOUS DEVICES ARE DIFFERENT , SO WE LEAVE SOME SPACES
+IN OUR SITE 
+
+TO DO THAT WE USE CONTAINER CLASS NAME:
+
+<div class="container">		////sudden jump to the required screen
+	<div class="row>
+		<div class="col-md-4">
+		</div>
+	</div>
+</div>
+
+====
+<div class="container-fluid">  this will slowly change wrt the size of the  row
+
+JUST SEARCHING THE WEB FOR BOOTSTRAP STYLES
+
+<p class="text:danger">blah</p>
+
+
+
+IMPORTANT-=-===========
+
+WE CAN ADD MULTIPLE CLASSES BY GIVING SPACES  
+
+<p class="text:warning user classes bg-info" 

@@ -54,35 +54,38 @@
                 <label class ="form2">It's quick and easy.</label>
                 <br>
                 <br>
-                <form>
-                    <input class="box2" type="text" placeholder="   First name">
-                    <input class="box2" type="text" placeholder="   Surname">
+                <form id="signup">
+                    <input name="bb" class="box2" type="text" placeholder="   First name">
+                    <input name="ss" class="box2" type="text" placeholder="   Surname">
                     <br>
                     <br>
                     
-                    <input class="box3" type="text" placeholder="   Mobile number or email address">
+                    <input name="email" class="box3" type="text" placeholder="   Mobile number or email address">
                     <br>
                     <br>
                     
-                    <input class="box3" type="password" placeholder="   New password">
+                    <input name="pass" class="box3" type="password" placeholder="   New password">
                     <br>
                     <br>
                     
                     <label class="form-head">Date of birth</label>
                     <br>
                     <br>
-                    <select class="drop">
-                        <option>15</option>
-                        <option>16</option>
-                        <option>17</option>
+                    <select class="drop" name="day">
+                        <option value="">Day</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
                     </select>
-                    <select class="drop">
-                        <option>july</option>
-                        <option>aug</option>
-                        <option>sept</option>
+                    <select class="drop" name="month">
+                        <option value="">month</option>
+                        <option value="july">july</option>
+                        <option value="aug">aug</option>
+                        <option value="sept">sept</option>
                     </select>
-                    <select class="drop">
-                        <option>1995</option>
+                    <select class="drop" name="year">
+                        <option value="">year</option>
+                        <option value="1995">1995</option>
                         <option>1996</option>
                         <option>1997</option>
                     </select>
@@ -123,5 +126,8 @@
             <label>Facebook © 2020</label>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+    <script src="ss.js"></script>
 </body>
 </html>
