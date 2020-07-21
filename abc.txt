@@ -20,7 +20,10 @@ save the file as .html,
 then type html on editor choose html 5 from list, auto codes will appears
 
 
+===============================================================
+<span> is used to give formatting to a single character in the sentence or word
 
+=======================================================
 
 
 
@@ -1035,6 +1038,15 @@ GO TO
 HTML TAG
 
 <html style="scroll behaviour:smooth">
+
+
+
+
+
+===================================HOSTING====
+TO HOST A STATIC WEBSITE FOR FREE IN GITHUB 
+
+WE HAVE TO PUSH OUR PROJECT TO GIT HUB , THEN GO TO SETINGS
 
 
 
