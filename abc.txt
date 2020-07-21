@@ -935,3 +935,108 @@ IMPORTANT-=-===========
 WE CAN ADD MULTIPLE CLASSES BY GIVING SPACES  
 
 <p class="text:warning user classes bg-info" 
+
+
+
+
+
+
+
+
+
+==========================================================
+project
+==========================================================
+
+
+html semantics
+
+semantics tags are simply used to identify the part of the codes
+for a larger project.
+
+e.g: <header>
+	//whats in header contains
+	</header>
+
+
+
+=========================IMPORTANT==========
+IN BOOTSTRAP CLASSES ARE SEPERATED USING SPACE, SEARCH FOR CLASSES NEEDED
+PADDIND IS SIMPLE, p-3 , WE USE '-' SIGN IN BOOTSTRAP CLASSES
+
+
+
+======================================
+
+classes like "ml-auto" means margin left auto arrange
+"mr-auto" means margin right auto alingn
+"mx-auto" means margin x axis auto align
+"my-auto" means margin y axis auto align
+
+==============================================
+
+TO ALIGN THE BUTTON TO RIGHT SIDE ON SMALL DEVICES 
+
+WE HAVE TO EXPLICITILY GIVE SIZE
+i.e "col-md-6 col-9" for first part
+	"col-md-6 col-3" for second part
+
+WE CAN GIVE "ml-auto" to any component
+
+
+
+========================================
+align-items-center , for centering
+
+==============================
+
+<i class="fa fa-fw fa-home display-1"></i>  for larger icon display 
+
+
+
+=========================================================
+
+
+WE CAN INCLUDE ANYTHING IN A 'a' tag 
+
+<a href"site address">any component with any styles and function</a>
+
+
+
+we can remove fixed width from card tag in bootstrap for proper alignment
+
+
+
+=======================================================
+
+to navigate between in page components using menu 
+
+WE CAN GIVE ID TO EACH SECTION
+AND THIS ID SHOULD BE PLACED IN href="#sectionid"  of components
+
+
+========================================================IMPORTANT
+
+TO PLACE THE MENU AS WE MOVE DOWN USING SCROLLING:
+
+for that in css styles we have "position:fixed" option
+
+then we need to set the width in styles to 100 % of this header
+
+THEN SET z-index number in styles to give priority.
+
+<header styles="position:fixed;width:100%;z-index:1;">
+ 
+</header>
+
+========TO GIVE A SMOOTH SCROLLING EFFECT ON CLICKING MENUBAR OPTION
+
+GO TO 
+HTML TAG
+
+<html style="scroll behaviour:smooth">
+
+
+
+
+
